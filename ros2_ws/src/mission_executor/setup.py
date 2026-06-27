@@ -19,8 +19,10 @@ setup(
     license='MIT',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
-            'main = mission_executor.main:main',
+    'console_scripts': [
+        'main = mission_executor.main:main',
+        'publisher = mission_executor.publisher:main',
+        'subscriber = mission_executor.subscriber:main',
         ],
     },
 )
